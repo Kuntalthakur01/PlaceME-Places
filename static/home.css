@@ -15,9 +15,8 @@
   }
   
   #logo {
-    color:#e67e22;
+    color: #fe0aa4;
     font-family: "Abril Fatface";
-    
   }
   
   .nav-header {
@@ -26,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: rgb(31, 28, 28);
+    color: #fe0aa4;
     width: 80%;
     margin: auto;
     padding: 2em 0em;
@@ -83,7 +82,7 @@
     color: rgb(86, 124, 228);
   }
   .hike-span {
-    color: rgb(167, 110, 231);
+    color:#fe0aa4;
   }
   .hero-desc h2 {
     font-family: "Abril Fatface";
@@ -122,11 +121,12 @@
   }
   .burger {
     cursor: pointer;
-    background-color:  rgb(139, 5, 5);
+    background-color: #fe0aa4;
   }
   .nav-links {
     font-size: 1.5em;
     flex-basis: 10rem;
+    color:#fe0aa4
   }
   .nav-links h3 {
     padding: 1em 3em;
@@ -220,7 +220,7 @@
     align-items: center;
     width: 70%;
     margin: auto;
-    color: white;
+    color: rgb(4, 3, 3);
     margin-top: 5rem;
     flex-wrap: wrap;
     position: relative;
@@ -240,7 +240,7 @@
     height: 100%;
     object-fit: cover;
   }
-  
+
   .fashion-text h1 {
     font-size: 4em;
     padding: 2em -0.5em;
@@ -317,8 +317,6 @@
     font-size: larger;
     margin-right: 150px;
     font-family: Arial, Helvetica, sans-serif;
-
-
   }
 
   @media screen and (max-width: 1500px) {
@@ -388,3 +386,5 @@
       padding: 1em;
       text-align: center;
     }
+  }
+} 

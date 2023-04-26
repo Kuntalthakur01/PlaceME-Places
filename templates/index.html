@@ -45,6 +45,7 @@
     </main>
     
     <form class="msger-inputarea">
+      <!-- <button class="msger-regenerate-btn" type="button" name="action" onclick= "window.location.href='{{url_for('get_bot_response')}}';"> -->
       <button class="msger-regenerate-btn" type="button" name="action">
          <i class="fa-solid fa-rotate"></i>
       </button>
@@ -64,7 +65,7 @@
     // Icons made by Freepik from www.flaticon.com
     const BOT_IMG = "../static/robot.png";
     const PERSON_IMG = "../static/user.png";
-    const BOT_NAME = "    ChatBot";
+    const BOT_NAME = "    PlaceMePlaces";
     const PERSON_NAME = "You";
 
     msgerForm.addEventListener("submit", event => {
@@ -100,17 +101,14 @@
     }
 
     function botResponse(rawText) {
-
-      // Bot Response
-      $.get("/get", { msg: rawText }).done(function (data) {
-        console.log(rawText);
-        console.log(data);
-        const msgText = data;
-        appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
-
-      });
-
-    }
+  // Bot Response
+  $.get("/get", { msg: rawText }).done(function (data) {
+    console.log(rawText);
+    console.log(data);
+    const msgText = data.replace(/\n/g, "<br>"); // Replace \n with <br>
+    appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+  });
+}
     // Utils
     function get(selector, root = document) {
       return root.querySelector(selector);

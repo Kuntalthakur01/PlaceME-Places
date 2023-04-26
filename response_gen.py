@@ -7,11 +7,11 @@ def gen_response(userText):
     location_list, emotion = execution.location_recommendation(userText)
     # Define patterns and corresponding responses
     patterns = {
-        r"Excited": ["It's great to hear that you're feeling excited!", "That's fantastic news! What's been making you feel so excited?", "I'm so happy to hear that! Is there anything specific that you're excited about?"],
-        r"Joy": ["That's great to hear! I'm so happy for you.", "Wonderful news! You're really making my day.", "Congratulations! It's always great to hear about people feeling joyful.", "I'm thrilled for you! Anything exciting you'd like to share?"],
-        r"Neutral": ["I see. How can I assist you today?", "Alright. Is there anything you'd like to talk about?", "I understand. Is there anything in particular you need help with?"],
-        r"Sad": ["I'm sorry to hear that you're feeling down. Would you like to talk about it?", "I'm here for you if you need someone to talk to. Is there anything on your mind?", "It's okay to feel sad sometimes. Do you want to talk about what's been bothering you?"],
-        r"Disappointed": ["I'm sorry to hear that you're feeling disappointed. Is there anything I can do to help?", "That must be tough. Can you tell me more about what's been causing you to feel disappointed?", "I'm here to listen if you need to vent. What's been making you feel disappointed?"]
+        r"Excited": ["It's great to hear that you're feeling excited!", "That's fantastic news!", "I'm so happy to hear that!"],
+        r"Joy": ["That's great to hear!", "Wonderful news! You're really making my day.", "Congratulations! It's always great to hear about people feeling joyful.", "I'm thrilled for you!"],
+        r"Neutral": ["I see.", "Alright.", "I understand."],
+        r"Sad": ["I'm sorry to hear that you're feeling down.", "I'm here for you if you need someone to talk to.", "It's okay to feel sad sometimes."],
+        r"Disappointed": ["I'm sorry to hear that you're feeling disappointed.", "That must be tough. ", "I'm here to listen if you need to vent."]
     }
 
     # Define a function to generate responses

@@ -86,7 +86,7 @@ def location_recommendation(input_text):
     # # print the filtered DataFrame
     # # print(filtered_df)
 
-    random_rows = filtered_df.sample(n=5, random_state=69)
+    random_rows = filtered_df.sample(n=5)
     # print(random_rows)
 
 
